@@ -1,4 +1,4 @@
-import * as wasm from "./pkg/monte_carlo_pi";
+import * as wasm from "monte-carlo-pi";
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
