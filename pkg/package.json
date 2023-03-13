@@ -1,0 +1,16 @@
+{
+  "name": "monte-carlo-pi",
+  "collaborators": [
+    "amadou sy <amsada93@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "monte_carlo_pi_bg.wasm",
+    "monte_carlo_pi.js",
+    "monte_carlo_pi_bg.js",
+    "monte_carlo_pi.d.ts"
+  ],
+  "module": "monte_carlo_pi.js",
+  "types": "monte_carlo_pi.d.ts",
+  "sideEffects": false
+}
