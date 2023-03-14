@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amadou SY - Pi == ?? !</title>
+    <style>
+      body{
+        background-color: rgb(160, 136, 113);
+      }
+      blockquote{
+        color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+      }
+      .slidecontainer{
+        width: 25em;
+      }
+      .pi{
+        font-weight: bold;
+        color: aliceblue;
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: xx-large;
+      }
+      .slider{
+        width: 90%;
+      }
+      .divv{
+        margin-top: 2em;
+        font-weight: bold;
+        color: rgb(57, 126, 230);
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: xx-large;
+      }
+      .result{
+        margin-top: 0.5em;
+        font-weight: bold;
+        color: rgb(244, 246, 248);
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: xx-large;
+      }
+      </style>
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <script src="./bootstrap.js"></script>
+    
+    <div class="flex-container">
+      <div class="pi">
+        <h1>&#x1D745;-day</h1>
+      </div>
+      <blockquote>
+        L'estimation de Pi par la méthode de Monte Carlo implique l'utilisation d'un grand nombre de points aléatoires pour approximer la valeur de Pi. Voici les étapes pour effectuer cette méthode :
+
+Tracez un cercle de rayon 1 unité inscrit dans un carré de côté 2 unités.
+
+Générez un grand nombre de points aléatoires à l'intérieur du carré en utilisant une distribution uniforme.
+
+Comptez le nombre de points qui tombent à l'intérieur du cercle.
+
+Estimez la valeur de Pi comme étant le rapport du nombre de points à l'intérieur du cercle sur le nombre total de points générés, multiplié par 4.
+
+Par exemple, si vous générez 10 000 points aléatoires et que 7 850 tombent à l'intérieur du cercle, vous pouvez estimer Pi comme suit :
+
+Pi ≈ (7850 / 10000) x 4 ≈ 3,14
+
+Plus le nombre de points générés est grand, plus l'estimation de Pi sera précise. La méthode de Monte Carlo est souvent utilisée pour des simulations qui impliquent des calculs complexes ou des variables aléatoires.
+      </blockquote>
+      <div class="divv">
+        <h class="v"><span id="demo"></span></h>
+      </div>
+      <div class="slidecontainer">
+          <input type="range" min="1000" max="1000000" value="50" class="slider" id="myRange">
+      </div>
+      <div class="result">
+        <h class="pi-v">&#x1D745; = <span id="result"></span></h>
+      </div>
+      <h4 style="margin-top: 20em;font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: aliceblue;">@Amadou SY</h1>
+    </div>
+  </body>
+</html>
