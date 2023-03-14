@@ -1,7 +1,7 @@
 {
   "name": "monte-carlo-pi",
   "version": "0.1.0",
-  "description": "A template for no npm wasm-rust and github hosting",
+  "description": "A template for no npm wasm-rust and github hosting !",
   "main": "index.js",
   "bin": {
     "create-wasm-app": ".bin/create-wasm-app.js"
